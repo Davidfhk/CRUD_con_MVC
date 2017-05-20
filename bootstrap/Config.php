@@ -1,6 +1,6 @@
 <?php
 
-namespace David\Bootstrap
+namespace David\Bootstrap;
 
 class Config
 
