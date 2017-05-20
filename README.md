@@ -5,4 +5,8 @@ Prácticando: MVC, Framework, Composer
 
 Requisitos:
 
-Instalar composer, y hacer un composer install en la carpeta raiz, y así se creara la carpeta vendor y el autoload
+Instalar composer, y hacer un composer install en la carpeta raiz, y así se creara la carpeta vendor y el autoload.
+
+Nombre de la base de datos = crud_MVC
+
+Password = ""
