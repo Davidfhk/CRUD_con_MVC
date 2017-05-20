@@ -1,0 +1,17 @@
+{
+    "name": "david/crud_mvc",
+    "description": "crud con mvc",
+    "authors": [
+        {
+            "name": "David",
+            "email": "david@david.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+    	"psr-4": {
+    		"David\\Bootstrap\\":"Bootstrap",
+    		"David\\Crud\\":"app/"
+    	}
+    }
+}
