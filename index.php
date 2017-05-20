@@ -7,6 +7,10 @@ $request = new Request();
 // obtenemos el parámetro o asignamos un valor por defecto
 $controller = $request->getParam('controller') ?? 'page';
 
+if ($controller == "") {
+	$controller = 'page';
+}
+// var_dump($controller);
 // construimos el nombre completo del controlador
 $controller = ucfirst($controller) . 'Controller';
 $controller = 'David\\Crud\Controller\\'. $controller;
