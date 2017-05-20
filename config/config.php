@@ -3,7 +3,7 @@
 return[
 	'db' => [
 		'host'		=>	'localhost',
-		'dbname'	=>	'pildoras_informaticas',
+		'dbname'	=>	'crud_MVC',
 		'charset'	=>	'utf8',
 		'user'		=>	'root',
 		'password'	=>	''
