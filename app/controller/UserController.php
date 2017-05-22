@@ -13,11 +13,11 @@ class UserController
 		$view->render('index.php', ['users' => $user]);
 	}
 
-	public function show($id){
-		$view = new View('app/templates/user');
-		$user = User::getUserById($id);
-		$view->render('show.php', ['user' => $user]);
-	}
+	// public function show($id){
+	// 	$view = new View('app/templates/user');
+	// 	$user = User::getUserById($id);
+	// 	$view->render('show.php', ['user' => $user]);
+	// }
 
 	public function update($id){
 		$view = new View('app/templates/user');
@@ -38,5 +38,10 @@ class UserController
 		header('Location:../');
 		}
 
+	}
+
+	public function deleteUser($id){
+		$user = User::deleteUser($id);
+		header('Location:../');
 	}
 }
