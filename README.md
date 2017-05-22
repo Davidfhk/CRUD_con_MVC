@@ -1,7 +1,9 @@
 # crud_MVC
 CRUD utilizando el patrón de arquitectura MVC
 
-Prácticando: MVC, Framework, Composer
+Prácticando: MVC, Framework, Composer.
+
+Para acceder por ahora al crud hay que poner al final de la url: /user/ 
 
 Requisitos:
 
