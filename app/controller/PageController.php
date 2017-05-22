@@ -1,11 +1,13 @@
 <?php
 
 namespace David\Crud\Controller;
+use David\Crud\View\View;
 
 class PageController
 {
 	public function index(){
-		echo "Bienvenido";
+		$view = new View('app/templates/page');
+		$view->render('index.php');
 	}
 
 	public function about($id){
