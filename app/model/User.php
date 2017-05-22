@@ -81,4 +81,12 @@ class User
 		$req->execute(array('id' => $id, 'name' => $name,'surname' => $surname, 'address' => $address));
 
 	}
+
+	public static function addUser($name,$surname,$address,$photo = null){
+		$db = Db::getInstance();
+		$req = $db->prepare('INSERT INTO datos_usuarios(nombre,apellido,direccion,foto)
+					VALUES (:name,:surname,:address,:photo)');
+
+		$req->execute(array('name' => $name,'surname' => $surname, 'address' => $address, 'photo' => $photo));
+	}
 }
