@@ -24,7 +24,7 @@
 				<td><?=$user->getName()?></td>
 				<td><?=$user->getSurname()?></td>
 				<td><?=$user->getAddress()?></td>
-				<td><a href=""><input type="button" name="del" value="borrar"></a></td>
+				<td><a href="<?='deleteUser/'.$user->getId()?>"><input type="button" name="del" value="borrar"></a></td>
 				<td><a href="<?='update/'.$user->getId()?>"><input type="button" name="act" value="actualizar"></a></td>
 		</tr>
 			<?php endforeach ?>
