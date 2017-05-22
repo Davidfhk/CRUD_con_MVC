@@ -89,4 +89,12 @@ class User
 
 		$req->execute(array('name' => $name,'surname' => $surname, 'address' => $address, 'photo' => $photo));
 	}
+
+	public static function deleteUser($id){
+		$db = Db::getInstance();
+		$id = intval($id);
+		$req = $db->prepare('DELETE FROM datos_usuarios WHERE id = :id');
+
+		$req->execute(array('id' => $id));
+	}
 }
