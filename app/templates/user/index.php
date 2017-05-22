@@ -28,7 +28,7 @@
 				<td><a href="<?='update/'.$user->getId()?>"><input type="button" name="act" value="actualizar"></a></td>
 		</tr>
 			<?php endforeach ?>
-		<form action="insert.php" method="POST">
+		<form action="<?='addUser/'?>" method="POST">
 		<tr>
 			<td></td>
 			<td><input type="text" name="name"></td>
