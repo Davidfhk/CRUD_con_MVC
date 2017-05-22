@@ -3,7 +3,6 @@ CRUD utilizando el patrón de arquitectura MVC
 
 Prácticando: MVC, Framework, Composer.
 
-Para acceder por ahora al crud hay que poner al final de la url: /user/ 
 
 Requisitos:
 
@@ -11,6 +10,8 @@ PHP 7
 
 Instalar composer, y hacer un composer install en la carpeta raiz, y así se creara la carpeta vendor y el autoload.
 
-Nombre de la base de datos = crud_MVC
+Nombre de la base de datos = crud_MVC 
 
 Password = ""
+
+(se pueden cambiar los datos de la bbdd, se encuentran dentro de la carpeta config).
