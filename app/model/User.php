@@ -59,7 +59,7 @@ class User
 		return $list;
 	}
 
-	public static function find($id){
+	public static function getUserById($id){
 		$db = Db::getInstance();
 		$id = intval($id);
 
@@ -69,5 +69,16 @@ class User
 		$user = $req->fetch();
 
 		return new User($user['id'],$user['nombre'],$user['apellido'],$user['direccion']);
+	}
+
+	public static function setUser($id,$name,$surname,$address){
+		$db = Db::getInstance();
+		$id = intval($id);
+		$req = $db->prepare('UPDATE datos_usuarios 
+					SET nombre = :name, apellido = :surname, direccion = :address 
+					WHERE id = :id');
+
+		$req->execute(array('id' => $id, 'name' => $name,'surname' => $surname, 'address' => $address));
+
 	}
 }
