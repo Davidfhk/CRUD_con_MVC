@@ -31,4 +31,12 @@ class UserController
 		}
 
 	}
+
+	public function addUser(){
+		if (isset($_POST)) {
+			$user = User::addUser($_POST['name'],$_POST['surname'],$_POST['address']);
+		header('Location:../');
+		}
+
+	}
 }
